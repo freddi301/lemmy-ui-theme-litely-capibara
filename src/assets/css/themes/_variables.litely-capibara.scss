@@ -1,0 +1,59 @@
+@import "./variables";
+
+// Colors
+$gray-100: #f8f9fa;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #222;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$red: #d8486a;
+$orange: #f1641e;
+$green: #00a846;
+$cyan: #02bdc2;
+
+$capibara-green: #00a63f;
+$capibara-magenta: #e4007c;
+$capibara-beige: #f8f3ef;
+
+$primary: $capibara-green;
+$secondary: $gray-600;
+$success: $green;
+$info: $capibara-magenta;
+$danger: $red;
+
+$body-color: $gray-900;
+$body-bg: #fff;
+$border-color: rgba($body-color, 0.25);
+$mark-bg: rgb(255, 252, 239);
+$headings-color: $gray-700;
+
+$card-cap-bg: $capibara-beige;
+
+$font-family-sans-serif:
+  "Inter", -apple-system, BlinkMacSystemFont, "Droid Sans", "Segoe UI",
+  Verdana, "Arimo", "Helvetica", Arial, sans-serif;
+$font-weight-bold: 700;
+
+$navbar-dark-toggler-border-color: rgba($black, 0.1);
+$navbar-light-color: $gray-600;
+$navbar-light-hover-color: $gray-900;
+$navbar-light-active-color: $gray-900;
+
+$form-feedback-valid-color: $success;
+$input-btn-focus-color: rgba($primary, 0.75);
+
+$border-radius: 6px;
+$border-radius-lg: 6px;
+$border-radius-sm: 6px;
+$rounded-pill: 6px;
+
+$box-shadow: none;
+$box-shadow-sm: none;
+$box-shadow-lg: none;
+$box-shadow-inset: none;
+
+$hr-border-color: rgba($body-color, 0.25);
