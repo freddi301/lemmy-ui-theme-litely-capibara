@@ -1,3 +1,5 @@
+TODO: this readme needs polishing
+
 # Capibara Theme
 
 Goal: tweak colors/font/spacing of Lemmy's default "darkly"/"litely" themes.

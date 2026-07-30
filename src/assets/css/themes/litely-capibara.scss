@@ -61,19 +61,6 @@ h1.post-name.h5 {
   display: flex !important;
 }
 
-.btn-light {
-  border: 2px solid transparent !important;
-  background-image:
-    linear-gradient(#fff, #fff),
-    linear-gradient(
-      -45deg,
-      mix(white, $capibara-green, 40%),
-      mix(white, $capibara-magenta, 40%)
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}
-
 @include media-breakpoint-down(sm) {
   div.site-sidebar.accordion > section#sidebarInfo {
     border-top: none;
@@ -118,11 +105,11 @@ div.shadow-sm:has(nav.navbar) {
 }
 
 main.mt-4 {
-  margin-top: 0px !important;
+  margin-top: 16px !important;
 }
 
-article.post-container > div.row:first-child {
-  margin-top: 16px !important;
+article.post-container>div.row:first-child {
+  margin-top: -8px !important;
   margin-bottom: 12px !important;
 }
 
@@ -130,10 +117,6 @@ article.post-container > div.row:first-child {
   li.nav-item#navMessages {
     margin-right: 8px;
   }
-}
-
-div#tagline {
-  margin-top: 8px;
 }
 
 article.details.comment-node.border-top {
@@ -145,7 +128,7 @@ ul.comments.border-top {
   border: none !important;
 }
 
-button.border-light-subtle {
+.btn.border-light-subtle {
   border: 1px solid transparent !important;
   background-image:
     linear-gradient(#fff, #fff),
@@ -168,4 +151,25 @@ section.card#sidebarMain {
 
 section.card#sidebarInfo {
   border: none !important;
+}
+
+ul.dropdown-menu>li>.btn {
+  border: none !important;
+}
+
+div.dropdown>ul.dropdown-menu {
+  border: 1px solid transparent !important;
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(
+      -45deg,
+      mix(white, $capibara-green, 40%),
+      mix(white, $capibara-magenta, 40%)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+li>hr.dropdown-divider {
+  border-color: transparent;
 }
