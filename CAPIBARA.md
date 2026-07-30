@@ -1,5 +1,3 @@
-TODO: this readme needs polishing
-
 # Capibara Theme
 
 Goal: tweak colors/font/spacing of Lemmy's default "darkly"/"litely" themes.
@@ -28,32 +26,16 @@ public test backend, no need to run Postgres/Rust backend/Docker yourself.
    `$border-radius`, etc).
 4. Run `pnpm themes:build` to compile via Sass once, or see below to watch
    and recompile automatically while you iterate.
-5. To actually see it in `/settings` while developing, symlink or copy the
-   compiled `.css` into an `extra_themes` folder at the repo root (create it
-   if missing). Per the
-   [official theming docs](https://join-lemmy.org/docs/administration/theming.html),
-   that folder is scanned fresh on every request for the theme list — so the
-   new theme shows up immediately, no server restart needed.
 
 ## Watching for changes
 
-While iterating on colors/spacing, run Sass in watch mode in a second
-terminal so every save recompiles the theme's `.css`:
-
-```bash
-pnpm themes:watch
-```
-
-This runs `sass --watch src/assets/css/themes/:src/assets/css/themes
---embed-sources` and rebuilds on every `.scss` save. Keep it running
-alongside `pnpm dev`.
-
-For `litely-capibara` specifically, use this instead — it compiles straight
+Use this instead — it compiles straight
 into `extra_themes/` so the live-reloaded result shows up in `/settings`
 immediately, with no manual copy step:
 
 ```bash
-pnpm themes:watch:capibara
+pnpm themes:watch:litely-capibara
+pnpm themes:watch:darkly-capibara
 ```
 
 ## Distribution
