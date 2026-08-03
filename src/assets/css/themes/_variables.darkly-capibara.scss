@@ -20,7 +20,7 @@ $yellow: #f39c12;
 $green: #00bc8c;
 $cyan: #3498db;
 
-$capibara-green: #00a63f;
+$capibara-green: lighten(desaturate(#00a63f, 25%), 10%);
 $capibara-magenta: #e4007c;
 $capibara-beige: #f8f3ef;
 $capibara-surface: $gray-1000;

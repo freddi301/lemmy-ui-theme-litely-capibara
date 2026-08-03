@@ -151,6 +151,16 @@ section.card#sidebarInfo {
   border: none !important;
 }
 
+div.community-sidebar>aside>div#sidebarContainer>section.card#sidebarMain>div.card-body {
+  padding-left: 4px;
+  padding-right: 4px
+}
+
+div.community-sidebar>aside>div#sidebarContainer>section.card#sidebarInfo>div.card-body {
+  padding-left: 4px;
+  padding-right: 4px
+}
+
 /* Cards & dropdowns */
 
 .card-header {
